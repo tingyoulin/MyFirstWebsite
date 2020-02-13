@@ -1,6 +1,11 @@
 /* 跟設定無關的一定要註解 */
 
 /* CSS選擇器 */
+body {
+    /* 使用微軟正黑體 */
+    font-family: 'Microsoft Jhenghei';
+}
+
 .important-title {
     color: rgb(255, 0, 242);
     font-size: 40px;
@@ -9,6 +14,26 @@
 
 .text-center {
     text-align: center;
+}
+
+.imgs {
+    display: flex;              /* 讓內部元素預設橫著排列 */
+    justify-content: center;    /* 調整flex內部元素對其方式 靠右 flex-end*/
+    flex-wrap: wrap;            /* 若橫向排列無法容納，則自動換行 */
+}
+
+.img-grayscale {
+    filter: grayscale(100%);
+    transition: all .4s ease;
+}
+
+.img-grayscale:hover {
+/* img-grayscale物件被滑鼠游標指到時 */
+    filter: grayscale(0%);
+}
+
+.img-border {
+    margin: 30px 15px;
 }
 
 .text-right {
