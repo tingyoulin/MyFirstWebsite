@@ -48,3 +48,44 @@ body {
 h2 {
     color: orange;
 }
+
+/*============ cards 頁面 ============*/
+* {
+    border: 0px solid black;
+}
+
+.cards {
+    display: flex;              /* 讓內部元素預設橫著排列 */
+    justify-content: center;    /* 調整flex內部元素對其方式 靠右 flex-end*/
+    flex-wrap: wrap;            /* 若橫向排列無法容納，則自動換行 */
+}
+
+.card {
+    width: 300px;
+    margin: 30px 15px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.432);    /* 陰影 上下 左右 模糊 顏色 */
+    border-radius: 10px;                                 /* 圓角 */
+    overflow: hidden;                                    /* 內容溢出處理 */
+    transition: all .5s ease;
+}
+
+.card:hover {
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.432);
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 15px 15px;
+}
+
+.card-title {
+    margin-top: 0px;
+}
+
+.card-text {
+    margin-bottom: 0px;
+}
